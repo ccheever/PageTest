@@ -30,8 +30,10 @@
     self = [super init];
     if (self) {
         // Create the data model.
-        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        _pageData = [[dateFormatter monthSymbols] copy];
+        //NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        //_pageData = [[dateFormatter monthSymbols] copy];
+        //_pageData = @[@"Uno", @"Dos", @"Tres", @"Quatro", @"Cinco", @"Seis", @"Siete", @"Ocho", @"Nueve", @"Dies", @"Once", @"Dose"];
+        _pageData = @[@"sanfranciscostation", @"22ndstreetstation", @"bayshorestation", @"southsanfranciscostation", @"sanbrunostation", @"millbraetransitcenter", @"broadwaystation", @"burlingamestation", @"sanmateostation", @"haywardparkstation", @"hillsdalestation", @"belmontstation", @"sancarlosstation", @"redwoodcitystation", @"athertonstation", @"menloparkstation", @"paloaltostation", @"californiaavenuestation", @"sanantoniostation", @"mountainviewstation", @"sunnyvalestation", @"lawrencestation", @"santaclarastation", @"collegeparkstation", @"sanjosediridonstation", @"tamienstation", @"capitolstation", @"blossomhillstation", @"morganhillstation", @"sanmartinstation", @"gilroystation"];
     }
     return self;
 }
@@ -46,6 +48,7 @@
     // Create a new view controller and pass suitable data.
     PageTestDataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"PageTestDataViewController"];
     dataViewController.dataObject = self.pageData[index];
+    
     return dataViewController;
 }
 

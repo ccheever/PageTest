@@ -11,6 +11,7 @@
 @interface PageTestDataViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UILabel *dataLabel;
+@property (strong, nonatomic) IBOutlet UIWebView *webView;
 @property (strong, nonatomic) id dataObject;
 
 @end
